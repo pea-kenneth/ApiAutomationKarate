@@ -1,2 +1,2 @@
-# ApiAutomationKarate
-Api Automation using Karate in Java
+# KarateAPIAutomation
+Karate API Automation

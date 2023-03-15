@@ -1,0 +1,102 @@
+03.15.2023|7:43:31.136PM [main] INFO  com.intuit.karate.Runner - using system property 'karate.options': classpath:API/FeatureFiles/ReqIN/CreateUpdateDeleteUser.feature
+03.15.2023|7:43:31.219PM [main] INFO  com.intuit.karate.Runner - using system property 'karate.env': req
+03.15.2023|7:43:32.183PM [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+03.15.2023|7:43:32.962PM [pool-1-thread-2] INFO  com.intuit.karate - Karate.env System Property was :  req 
+03.15.2023|7:43:32.984PM [pool-1-thread-3] INFO  com.intuit.karate - Karate.env System Property was :  req 
+03.15.2023|7:43:32.984PM [pool-1-thread-1] INFO  com.intuit.karate - Karate.env System Property was :  req 
+03.15.2023|7:43:33.457PM [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > PUT https://reqres.in/api/api/users/id
+1 > Content-type: application/json; charset=UTF-8
+1 > Content-Length: 41
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.16.1)
+1 > Accept-Encoding: gzip,deflate
+{"name":"morpheus","job":"zion resident"}
+
+03.15.2023|7:43:33.457PM [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > DELETE https://reqres.in/api/api/users/id
+1 > Content-type: application/json
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.16.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+03.15.2023|7:43:33.457PM [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://reqres.in/api/api/users
+1 > Content-type: application/json; charset=UTF-8
+1 > Content-Length: 34
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.16.1)
+1 > Accept-Encoding: gzip,deflate
+{"name":"morpheus","job":"leader"}
+
+03.15.2023|7:43:34.288PM [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 830
+1 < 201
+1 < Date: Wed, 15 Mar 2023 11:43:42 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 83
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"53-o4ewc8C0L/Z7yy8c5dXZSgnyK/4"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=f%2FL6LJCE1wVLe8WPMLYk14iiEvRrM9Omo%2F43FkGiId7JK6Gc0wRIwg7A87zzqhB9%2FyPBOshERl%2FebFpAt%2B8FtXJ4JTa3aJ5RwoQjv2ZjH2iBZ7q4NOrkXaetSw%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 7a84800efe840514-HKG
+{"name":"morpheus","job":"leader","id":"20","createdAt":"2023-03-15T11:43:42.298Z"}
+
+03.15.2023|7:43:34.290PM [pool-1-thread-1] INFO  com.intuit.karate - [print] {
+  "name": "morpheus",
+  "job": "leader",
+  "id": "20",
+  "createdAt": "2023-03-15T11:43:42.298Z"
+}
+ 
+03.15.2023|7:43:34.291PM [pool-1-thread-1] INFO  com.intuit.karate - [print] created id is:  20 
+03.15.2023|7:43:34.720PM [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 1263
+1 < 204
+1 < Date: Wed, 15 Mar 2023 11:43:42 GMT
+1 < Content-Length: 0
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=rZxmC6obM1P%2F4OA975QopChRT9MHrgEYyx1Bu71Q%2FshyR%2BaS7u7CTwT4lNA%2F71CptTsF94nz85k2IY1I2CkECgwmFSJqSLONl7UnrryXb0quE8M6RH13irt3Fw%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 7a84800efc4a6e40-HKG
+
+
+03.15.2023|7:43:34.735PM [pool-1-thread-3] INFO  com.intuit.karate - [print]  
+03.15.2023|7:43:39.214PM [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 5757
+1 < 200
+1 < Date: Wed, 15 Mar 2023 11:43:47 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"50-tKW568LnqXIAbprFziHqbGADzxQ"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=%2FkkqQcI%2BNkazDx6HocwcvoeDstKP3DGATGzqOJKxg7x4jXgW280L0hLkJ9X0ovdBMqBcU3SkfUlOFNhZlVLBXjBIMA81H42aJWCXpOhyfMW9qjlQ%2FYek2JnBNA%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 7a84800efa79191d-HKG
+{"name":"morpheus","job":"zion resident","updatedAt":"2023-03-15T11:43:42.530Z"}
+
+03.15.2023|7:43:39.214PM [pool-1-thread-2] INFO  com.intuit.karate - [print] {
+  "name": "morpheus",
+  "job": "zion resident",
+  "updatedAt": "2023-03-15T11:43:42.530Z"
+}
+ 
+03.15.2023|7:43:39.996PM [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) classpath:API/FeatureFiles/ReqIN/CreateUpdateDeleteUser.feature
