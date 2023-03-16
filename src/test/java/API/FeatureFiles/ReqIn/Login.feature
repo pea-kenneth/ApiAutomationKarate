@@ -1,4 +1,4 @@
-Feature: Authentication
+Feature: login with decoded cred
 
   Background: Initialize
     Given url apiService

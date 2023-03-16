@@ -1,4 +1,4 @@
-Feature: Get All booking
+Feature: Get All users
 
   Background: Initialize stuff
     Given url apiService
