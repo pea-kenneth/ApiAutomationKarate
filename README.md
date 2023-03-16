@@ -8,5 +8,5 @@ mvn clean test -Dkarate.options=classpath:API/FeatureFiles/ReqIN/CreateUpdateDel
 
 Notes:
 I didnt cover all endpoints but at least i cover all applicable methods from get, get with param, post, put and delete.
-other endpoints that i did not cover is just basically the same with i cover, the important thing is  i make sure to  cover all the requirements listed.
+other endpoints that i did not cover is just basically the same with what i cover, the important thing is  i make sure to  cover all the requirements listed.
 
