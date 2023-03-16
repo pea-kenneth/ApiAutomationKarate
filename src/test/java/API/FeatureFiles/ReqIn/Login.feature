@@ -1,6 +1,6 @@
 Feature: Authentication
 
-  Background: Initialize Restful Booker
+  Background: Initialize
     Given url apiService
     * def utils = Java.type('Utils.Utils')
     * def decodedPassword = utils.decode64(ReqPassword)

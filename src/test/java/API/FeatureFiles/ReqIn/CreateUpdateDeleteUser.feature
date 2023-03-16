@@ -1,6 +1,6 @@
 Feature: Authentication
 
-  Background: Initialize Restful Booker
+  Background: Initialize
     Given url apiService
     And header Content-type = 'application/json'
 
